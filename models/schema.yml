@@ -7,9 +7,17 @@ models:
     columns:
       - name: id_cliente
         description: "The primary key for this table"
+        tests:
+          - not_null
+          - unique
+          - no_negatives
 
   - name: stg_orders
     description: "A staging model for the orders table"
     columns:
       - name: id_pedido
         description: "The primary key for this table"
+        tests:
+          - not_null
+          - unique
+          - no_negatives
