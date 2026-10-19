@@ -1,0 +1,8 @@
+target/
+dbt_packages/
+logs/
+
+.env
+venv
+service_account_key.json
+dbt_internal_packages/
